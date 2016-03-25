@@ -22,7 +22,7 @@ include './config/config.php';
                         Product Engineering
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="">Consulting</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>consulting">Consulting</a></li>
                         <li class="page">Product Engineering</li>
                     </ol>
                 </div>

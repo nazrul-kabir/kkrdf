@@ -20,7 +20,7 @@
                             </ul>
                         </li>             
                         <li class="dropdown dropdown-toggle">
-                            <a href="consulting.php">Consulting</a>
+                            <a href="<?php echo baseUrl(); ?>consulting">Consulting</a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo baseUrl(); ?>mobility">Mobility</a></li>
                                 <li><a href="<?php echo baseUrl(); ?>business-intelligence">Business Intelligence</a></li>
@@ -31,7 +31,7 @@
                             </ul>                   
                         </li>
                         <li class="dropdown dropdown-toggle">
-                            <a href="">Technology</a>
+                            <a href="<?php echo baseUrl(); ?>technology">Technology</a>
                         </li>
                         <li class="dropdown dropdown-toggle">
                             <a href="#" data-toggle="dropdown">Our Works</a>
@@ -44,7 +44,7 @@
                             </ul>
                         </li>
                         <li class="dropdown dropdown-toggle">
-                            <a href="#">Contact Us</a>
+                            <a href="<?php echo baseUrl(); ?>contact">Contact Us</a>
                         </li>
                         <li class="search">
                             <a href="#" class="open-search">
@@ -71,7 +71,7 @@
                     </ul>
                 </li>             
                 <li>
-                    <a href="#">Consulting</a>
+                    <a href="<?php echo baseUrl(); ?>consulting">Consulting</a>
                     <ul>
                         <li><a href="<?php echo baseUrl(); ?>mobility">Mobility</a></li>
                         <li><a href="<?php echo baseUrl(); ?>business-intelligence">Business Intelligence</a></li>
@@ -81,7 +81,7 @@
                         <li><a href="<?php echo baseUrl(); ?>cloud">Cloud</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Technology</a></li>       
+                <li><a href="<?php echo baseUrl(); ?>technology">Technology</a></li>       
             </ul>
         </nav>
     </div>

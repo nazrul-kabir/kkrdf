@@ -22,7 +22,7 @@ include './config/config.php';
                         Cloud
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="">Consulting</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>consulting">Consulting</a></li>
                         <li class="page">Cloud</li>
                     </ol>
                 </div>

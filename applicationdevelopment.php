@@ -21,7 +21,7 @@ include './config/config.php';
                         Application Development
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="">Consulting</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>consulting">Consulting</a></li>
                         <li class="page">Application Development</li>
                     </ol>
                 </div>

@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="footer-widget col-md-3 col-xs-12 wow fadeIn animated" style="visibility: visible;">
+            <div class="footer-widget col-md-4 col-xs-12 wow fadeIn animated" style="visibility: visible;">
                 <h3 class="small-title">
                     About kkrdf
                 </h3>
@@ -22,7 +22,7 @@
                     </a>
                 </div>          
             </div>
-            <div class="footer-widget col-md-3 col-xs-12 wow fadeIn animated" data-wow-delay=".2s" style="visibility: visible;-webkit-animation-delay: .2s; -moz-animation-delay: .2s; animation-delay: .2s;">
+            <div class="footer-widget col-md-4 col-xs-12 wow fadeIn animated" data-wow-delay=".2s" style="visibility: visible;-webkit-animation-delay: .2s; -moz-animation-delay: .2s; animation-delay: .2s;">
                 <h3 class="small-title">Contact</h3>
                 <ul class="recent-tweets">
                     <li class="tweet">
@@ -36,20 +36,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-widget col-md-3 col-xs-12 wow fadeIn animated" data-wow-delay=".5s" style="visibility: visible;-webkit-animation-delay: .5s; -moz-animation-delay: .5s; animation-delay: .5s;">
-                <h3 class="small-title">
-                    Flicker Gallery
-                </h3>
-                <div class="plain-flicker-gallery">
-                    <a href="#" title="Pan Masala"><img src="assets/img/flicker/img1.jpg" alt=""></a>
-                    <a href="#" title="Sports Template for Joomla"><img src="assets/img/flicker/img2.jpg" alt=""></a>
-                    <a href="" title="Apple Keyboard"><img src="assets/img/flicker/img3.jpg" alt=""></a>
-                    <a href="" title="Hard Working"><img src="assets/img/flicker/img4.jpg" alt=""></a>
-                    <a href="" title="Smile"><img src="assets/img/flicker/img5.jpg" alt=""></a>
-                    <a href="" title="Puzzle"><img src="assets/img/flicker/img6.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="footer-widget col-md-3 col-xs-12 wow fadeIn animated" data-wow-delay=".8s" style="visibility: visible;-webkit-animation-delay: .8s; -moz-animation-delay: .8s; animation-delay: .8s;">
+            <div class="footer-widget col-md-4 col-xs-12 wow fadeIn animated" data-wow-delay=".8s" style="visibility: visible;-webkit-animation-delay: .8s; -moz-animation-delay: .8s; animation-delay: .8s;">
                 <h3 class="small-title">
                     Footer Menu
                 </h3>
