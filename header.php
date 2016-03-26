@@ -34,15 +34,23 @@
                             <a href="<?php echo baseUrl(); ?>technology">Technology</a>
                         </li>
                         <li class="dropdown dropdown-toggle">
-                            <a href="#" data-toggle="dropdown">Our Works</a>
+                            <a href="<?php echo baseUrl(); ?>our-works" data-toggle="dropdown">Our Works</a>
                             <ul class="dropdown-menu">
-                                <li><a href="">Enterprise Development</a></li>
-                                <li><a href="">iOS</a></li>
-                                <li><a href="">Android</a></li>
-                                <li><a href="">Onno Products</a>
+                                <li><a href="<?php echo baseUrl(); ?>enterprise-development">Enterprise Development</a></li>
+                                <li><a href="<?php echo baseUrl(); ?>ios">iOS</a></li>
+                                <li><a href="<?php echo baseUrl(); ?>android">Android</a></li>
+
+                                <li class="dropdown"><a href="">Onno Products</a>
+                                    <ul class="dropdown-menu sub-menu">
+                                        <li><a href="<?php echo baseUrl(); ?>atta">Atta</a></li>
+                                        <li><a href="<?php echo baseUrl(); ?>cinigura">Chinigura Chal</a></li>
+                                        <li><a href="<?php echo baseUrl(); ?>moyda">Moyda</a></li>
+                                        <li><a href="<?php echo baseUrl(); ?>suji">Suji</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
+
                         <li class="dropdown dropdown-toggle">
                             <a href="<?php echo baseUrl(); ?>contact">Contact Us</a>
                         </li>
@@ -81,9 +89,30 @@
                         <li><a href="<?php echo baseUrl(); ?>cloud">Cloud</a></li>
                     </ul>
                 </li>
-                <li><a href="<?php echo baseUrl(); ?>technology">Technology</a></li>       
+                <li><a href="<?php echo baseUrl(); ?>technology">Technology</a></li>  
+                <li>
+                    <a href="<?php echo baseUrl(); ?>our-works" data-toggle="dropdown">Our Works</a>
+                    <ul>
+                        <li><a href="<?php echo baseUrl(); ?>enterprise-development">Enterprise Development</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>ios">iOS</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>android">Android</a></li>
+
+                        <li><a href="">Onno Products</a>
+                            <ul>
+                                <li><a href="<?php echo baseUrl(); ?>atta">Atta</a></li>
+                                <li><a href="<?php echo baseUrl(); ?>cinigura">Chinigura Chal</a></li>
+                                <li><a href="<?php echo baseUrl(); ?>moyda">Moyda</a></li>
+                                <li><a href="<?php echo baseUrl(); ?>suji">Suji</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown dropdown-toggle">
+                    <a href="<?php echo baseUrl(); ?>contact">Contact Us</a>
+                </li>
             </ul>
         </nav>
     </div>
-   
+
 </section>      

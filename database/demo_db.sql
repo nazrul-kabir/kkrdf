@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.3.11
+-- version 4.1.12
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 24, 2016 at 01:29 PM
--- Server version: 5.6.24
--- PHP Version: 5.6.8
+-- Generation Time: Mar 26, 2016 at 12:57 PM
+-- Server version: 5.6.16
+-- PHP Version: 5.5.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `admin` (
-  `admin_id` int(5) NOT NULL,
+  `admin_id` int(5) NOT NULL AUTO_INCREMENT,
   `admin_full_name` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
   `admin_email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `admin_password` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
@@ -38,8 +38,9 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `admin_country` varchar(255) CHARACTER SET utf32 NOT NULL,
   `admin_status` enum('active','inactive') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'inactive',
   `admin_updated_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `admin_updated_by` int(5) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `admin_updated_by` int(5) NOT NULL,
+  PRIMARY KEY (`admin_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `admin`
@@ -51,13 +52,30 @@ INSERT INTO `admin` (`admin_id`, `admin_full_name`, `admin_email`, `admin_passwo
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contact`
+--
+
+CREATE TABLE IF NOT EXISTS `contact` (
+  `contact_id` int(11) NOT NULL AUTO_INCREMENT,
+  `contact_name` varchar(255) NOT NULL,
+  `contact_email` varchar(255) NOT NULL,
+  `contact_message` text NOT NULL,
+  `contact_subject` varchar(255) NOT NULL,
+  `contact_created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`contact_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `country`
 --
 
 CREATE TABLE IF NOT EXISTS `country` (
-  `country_id` int(11) NOT NULL,
-  `country_name` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=253 DEFAULT CHARSET=utf8;
+  `country_id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`country_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=253 ;
 
 --
 -- Dumping data for table `country`
@@ -314,36 +332,32 @@ INSERT INTO `country` (`country_id`, `country_name`) VALUES
 (251, 'Zambia'),
 (252, 'Zimbabwe');
 
---
--- Indexes for dumped tables
---
+-- --------------------------------------------------------
 
 --
--- Indexes for table `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`admin_id`);
-
---
--- Indexes for table `country`
---
-ALTER TABLE `country`
-  ADD PRIMARY KEY (`country_id`);
-
---
--- AUTO_INCREMENT for dumped tables
+-- Table structure for table `product`
 --
 
+CREATE TABLE IF NOT EXISTS `product` (
+  `product_id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_title` varchar(255) NOT NULL,
+  `product_image` varchar(255) NOT NULL,
+  `product_details` text NOT NULL,
+  `product_status` enum('Active','Inactive') NOT NULL,
+  `product_created_on` datetime NOT NULL,
+  `product_created_by` int(11) NOT NULL,
+  `product_updated_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `product_updated_by` int(11) NOT NULL,
+  PRIMARY KEY (`product_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
 --
--- AUTO_INCREMENT for table `admin`
+-- Dumping data for table `product`
 --
-ALTER TABLE `admin`
-  MODIFY `admin_id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `country`
---
-ALTER TABLE `country`
-  MODIFY `country_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=253;
+
+INSERT INTO `product` (`product_id`, `product_title`, `product_image`, `product_details`, `product_status`, `product_created_on`, `product_created_by`, `product_updated_on`, `product_updated_by`) VALUES
+(1, 'Onno', 'PIMG_20160326151314.jpg', '', 'Active', '2016-03-26 15:13:14', 1, '2016-03-26 09:13:14', 0);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
