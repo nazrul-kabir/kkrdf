@@ -23,7 +23,7 @@ if (isset($_POST['btnLogin'])) {
                 $result_row = mysqli_fetch_object($result);
                 if ($result_row->admin_password == $password) {
                     setSession("admin_id", $result_row->admin_id);
-                    setSession("admin_email", $username);
+                    setSession("admin_email", $email_address);
                     setSession("admin_password", $result_row->admin_password);
                     setSession("admin_name", $result_row->admin_full_name);
                     $success = "Logged in successfully";
