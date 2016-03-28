@@ -22,7 +22,7 @@ include './config/config.php';
                         Product Engineering
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>consulting">Consulting</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>consulting.php">Consulting</a></li>
                         <li class="page">Product Engineering</li>
                     </ol>
                 </div>
@@ -57,7 +57,6 @@ include './config/config.php';
                 </div>
             </div>
         </section>
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

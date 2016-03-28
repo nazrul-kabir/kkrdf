@@ -22,8 +22,8 @@ include './config/config.php';
                         Cinigura Cal
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>our-works">Our Works</a></li>
-                        <li><a href="<?php echo baseUrl(); ?>our-works">Onno Products</a></li>
+                        <li><a href="">Our Works</a></li>
+                        <li><a href="">Onno Products</a></li>
                         <li class="page">Cinigura Cal</li>
                     </ol>
                 </div>
@@ -58,7 +58,6 @@ include './config/config.php';
                 </div>
             </div>
         </section>
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

@@ -21,7 +21,7 @@ include './config/config.php';
                         Our Story
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>home">Home</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>index.php">Home</a></li>
                         <li class="page">Our Story</li>
                     </ol>
                 </div>
@@ -49,16 +49,6 @@ include './config/config.php';
                 </div>
             </div>
         </section>
-        <section id="about-intro-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

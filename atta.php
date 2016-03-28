@@ -13,7 +13,6 @@ include './config/config.php';
         <header id="header-wrap">
             <?php include './topnav.php'; ?>
             <?php include './header.php'; ?>
-
         </header>
         <div class="page-header">
             <div class="page-header-inner">
@@ -22,8 +21,8 @@ include './config/config.php';
                         Atta
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>our-works">Our Works</a></li>
-                        <li><a href="<?php echo baseUrl(); ?>our-works">Onno Products</a></li>
+                        <li><a href="">Our Works</a></li>
+                        <li><a href="">Onno Products</a></li>
                         <li class="page">Atta</li>
                     </ol>
                 </div>
@@ -60,7 +59,6 @@ include './config/config.php';
                 </div>
             </div>
         </section>
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

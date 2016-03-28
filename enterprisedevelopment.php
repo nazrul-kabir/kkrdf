@@ -22,7 +22,7 @@ include './config/config.php';
                         Enterprise Development
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>our-works">Our Works</a></li>
+                        <li><a href="">Our Works</a></li>
                         <li class="page">Enterprise Development</li>
                     </ol>
                 </div>
@@ -73,7 +73,6 @@ include './config/config.php';
                 </div>
             </div>
         </section>
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

@@ -10,11 +10,11 @@ include './config/config.php';
         <header id="header-wrap">
             <?php include './topnav.php'; ?>
             <?php include './header.php'; ?>
-            
+
         </header>
         <?php include 'slider.php'; ?>
         <section id="service-block-main">
-            
+
             <div class="container">
                 <h5 class="section-title">
                     WELCOME TO KKRDF
@@ -54,6 +54,8 @@ include './config/config.php';
             </div>
         </section>
         <?php include './whychooseus.php'; ?>
+        
+
         <?php include './products.php'; ?>     
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>

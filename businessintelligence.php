@@ -21,7 +21,7 @@ include './config/config.php';
                         Business Intelligence
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="">Consulting</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>consulting.php">Consulting</a></li>
                         <li class="page">Business Intelligence</li>
                     </ol>
                 </div>
@@ -60,7 +60,6 @@ include './config/config.php';
                 </div>
             </div>
         </section>
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

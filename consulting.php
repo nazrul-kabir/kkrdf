@@ -21,7 +21,7 @@ include 'config/config.php';
                         Consulting
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>home">Home</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>index.php">Home</a></li>
                         <li class="page">Consulting</li>
                     </ol>
                 </div>
@@ -47,7 +47,7 @@ include 'config/config.php';
                                     on our actions and locations. They can also provide us location specific information at the most relevant 
                                     instants. For the first time, consumerization of IT
                                 </p>
-                                <p><a href="<?php echo baseUrl(); ?>mobility"><span class="label label-primary">Read More</span></a></p>
+                                <p><a href="<?php echo baseUrl(); ?>mobility.php"><span class="label label-primary">Read More</span></a></p>
 
                             </div>
                         </div>
@@ -64,7 +64,7 @@ include 'config/config.php';
                                     today on how to centralize all the critical data held in internal and external systems and manage it for the right people,
                                     at the right time. Business intelligence solutions convert the data in your existing business systems
                                 </p>
-                                <p><a href="<?php echo baseUrl(); ?>business-intelligence"><span class="label label-primary">Read More</span></a></p>
+                                <p><a href="<?php echo baseUrl(); ?>businessintelligence.php"><span class="label label-primary">Read More</span></a></p>
 
                             </div>
                         </div>
@@ -82,7 +82,7 @@ include 'config/config.php';
                                     Often existing package solutions are not a good fit or cost competitive and in 
                                     those scenarios developing customer specific software solutions is the right strategy.
                                 </p>
-                                <p><a href="<?php echo baseUrl(); ?>application-development"><span class="label label-primary">Read More</span></a></p>
+                                <p><a href="<?php echo baseUrl(); ?>applicationdevelopment.php"><span class="label label-primary">Read More</span></a></p>
 
                             </div>
                         </div>
@@ -100,7 +100,7 @@ include 'config/config.php';
                                 <p><i class="fa fa-hand-o-right"></i>&nbsp;Using robust platforms like SAP, Oracle, and Microsoft etc. To develop superior business solutions, information security and enterprise architecture.</p>
                                 <p><i class="fa fa-hand-o-right"></i>&nbsp;Through our shared services model, ITIL, ITSM and cultural transformation capabilities. We ensure that changes are managed and controlled systematically,
                                     thus minimizing any undue disruption to IT services delivered to the customer.</p>
-                                <p><a href="<?php echo baseUrl(); ?>project-management"><span class="label label-primary">Read More</span></a></p>
+                                <p><a href="<?php echo baseUrl(); ?>projectmanagement.php"><span class="label label-primary">Read More</span></a></p>
 
                             </div>
                         </div>
@@ -118,7 +118,7 @@ include 'config/config.php';
                                     Businesses need to innovate quicker, go to market faster and simply do more with less.
                                     You can leverage our highly skilled resources to accelerate your product development at a competetive cost structure.
                                 </p>
-                                <p><a href="<?php echo baseUrl(); ?>project-management"><span class="label label-primary">Read More</span></a></p>
+                                <p><a href="<?php echo baseUrl(); ?>projectmanagement.php"><span class="label label-primary">Read More</span></a></p>
 
                             </div>
                         </div>
@@ -135,24 +135,16 @@ include 'config/config.php';
                                     tremendous traction and existing enterprises are starting their 
                                     journey to the cloud with internal applications and customer facing services..
                                 </p>
-                                <p><a href="<?php echo baseUrl(); ?>cloud"><span class="label label-primary">Read More</span></a></p>
+                                <p><a href="<?php echo baseUrl(); ?>cloud.php"><span class="label label-primary">Read More</span></a></p>
 
                             </div>
                         </div>
                     </div>
                     <?php include './leavemessage.php'; ?>
-
-
                 </div>
-                <div class="row">
-                    <div class="col-sm-8 col-md-8">
-
-                    </div>
-                </div>
+                
             </div>
         </section>
-
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

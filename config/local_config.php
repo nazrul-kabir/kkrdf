@@ -25,9 +25,9 @@ if ($domain == 'kkrdf.com') {
     $config['ROOT_DIR'] = '/home/arkhairul/public_html/kkrdf/';
     $config['DB_TYPE'] = 'mysql';
     $config['DB_HOST'] = 'localhost';
-    $config['DB_NAME'] = 'db_name';
-    $config['DB_USER'] = 'db_user';
-    $config['DB_PASSWORD'] = 'db_pass';
+    $config['DB_NAME'] = 'arkhairu_kkrdf';
+    $config['DB_USER'] = 'arkhairu_kk';
+    $config['DB_PASSWORD'] = 'kkrdf2016*1';
 } elseif ($domain == '192.168.0.102') {
     $config['SITE_NAME'] = 'KKRDF';
     $config['ADMIN_SITE_NAME'] = 'KKRDF | ADMIN PANEL';

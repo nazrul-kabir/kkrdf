@@ -22,7 +22,7 @@ include './config/config.php';
                         Why Us
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>our-story">Our Story</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>ourstory.php">Our Story</a></li>
                         <li class="page">Why Us</li>
                     </ol>
                 </div>
@@ -116,7 +116,6 @@ include './config/config.php';
                 </div>
             </div>
         </section>
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

@@ -20,7 +20,7 @@ include './config/config.php';
                 <div class="container">
                     <h1 class="section-title page-title">Mobility</h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>home">Consulting</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>consulting.php">Consulting</a></li>
                         <li class="page">Mobility</li>
                     </ol>
                 </div>
@@ -53,9 +53,6 @@ include './config/config.php';
                 </div>
             </div>
         </section>
-
-
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

@@ -1,29 +1,34 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="assets/img/slider/s-1.jpg" alt="Chania" style="height: 50%;width: 100%;">
-        </div>
-        <div class="item">
-            <img src="assets/img/slider/s-2.jpg" alt="Chania" style="height: 50%;width: 100%;">
-        </div>
+<?php
+$arrayBanner = array();
+$sqlbanner = "SELECT * FROM banner WHERE banner_status='Active' ORDER BY banner_id DESC";
+$resultBanner = mysqli_query($con, $sqlbanner);
+if ($resultBanner) {
+    while ($objBanner = mysqli_fetch_object($resultBanner)) {
+        $arrayBanner[] = $objBanner;
+    }
+} else {
+    
+}
+?>
+<?php if (count($arrayBanner) > 0): ?>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <?php $countBanner = 0; ?>
 
-        <div class="item">
-            <img src="assets/img/slider/s-3.jpg" alt="Flower" style="height: 50%;width: 100%;">
-        </div>
+        <ol class="carousel-indicators">
+            <?php foreach ($arrayBanner AS $banner): ?>
+                <li data-target="#myCarousel" data-slide-to="<?php echo $countBanner; ?>" <?php if ($countBanner == 0): ?> class="active" <?php endif; ?>></li>
+                <?php $countBanner++; ?>
+            <?php endforeach; ?>
+        </ol>
 
-        <div class="item">
-            <img src="assets/img/slider/s-4.jpg" alt="Flower" style="height: 50%;width: 100%;">
-        </div>
-        <div class="item">
-            <img src="assets/img/slider/s-5.jpg" alt="Flower" style="height: 50%;width: 100%;">
+        <?php $countDiv = 0; ?>
+        <div class="carousel-inner" role="listbox">
+            <?php foreach ($arrayBanner AS $banner): ?>
+                <div class='item <?php if ($countDiv == 0): ?> active <?php endif; ?>'>
+                    <img src="<?php echo $config['IMAGE_UPLOAD_URL'] . '/banner_image/' . $banner->banner_image; ?>" alt="<?php echo $banner->banner_title; ?>" style="height: 50%;width: 100%;">
+                </div>
+                <?php $countDiv++; ?>
+            <?php endforeach; ?>
         </div>
     </div>
-    
-</div>
+<?php endif; ?>

@@ -21,15 +21,12 @@ include './config/config.php';
                         Application Development
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>consulting">Consulting</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>consulting.php">Consulting</a></li>
                         <li class="page">Application Development</li>
                     </ol>
                 </div>
             </div>
         </div>
-
-
-
         <section id="about-intro-block">
             <div class="container">
                 <div class="row">
@@ -60,7 +57,6 @@ include './config/config.php';
                 </div>
             </div>
         </section>
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

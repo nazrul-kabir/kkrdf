@@ -10,6 +10,7 @@
             </a>
             <ul class="treeview-menu">
                 <li id="countryActive"><a href="<?php echo baseUrl('admin/view/country/country_list.php'); ?>"><i class="fa fa-circle-o"></i> Country List</a></li>
+                <li id="bannerActive"><a href="<?php echo baseUrl('admin/view/banner/banner_list.php'); ?>"><i class="fa fa-circle-o"></i> Banner List</a></li>
             </ul>
         </li>
         <li class="treeview">

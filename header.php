@@ -30,9 +30,9 @@
                                 <li><a href="<?php echo baseUrl(); ?>cloud.php">Cloud</a></li>
                             </ul>                   
                         </li>
-                        <li class="dropdown dropdown-toggle">
-                            <a href="<?php echo baseUrl(); ?>technology.php">Technology</a>
-                        </li>
+<!--                        <li class="dropdown dropdown-toggle">
+                            <a href="<?php // echo baseUrl(); ?>technology.php">Technology</a>
+                        </li>-->
                         <li class="dropdown dropdown-toggle">
                             <a href="<?php echo baseUrl(); ?>ourworks.php" data-toggle="dropdown">Our Works</a>
                             <ul class="dropdown-menu">
@@ -89,7 +89,7 @@
                         <li><a href="<?php echo baseUrl(); ?>cloud.php">Cloud</a></li>
                     </ul>
                 </li>
-                <li><a href="<?php echo baseUrl(); ?>technology.php">Technology</a></li>  
+                <!--<li><a href="<?php // echo baseUrl(); ?>technology.php">Technology</a></li>-->  
                 <li>
                     <a href="<?php echo baseUrl(); ?>ourworks.php" data-toggle="dropdown">Our Works</a>
                     <ul>

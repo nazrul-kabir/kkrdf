@@ -57,7 +57,6 @@ include './config/config.php';
             </div>
         </section>
 
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>

@@ -41,13 +41,11 @@
                     Footer Menu
                 </h3>
                 <div class="tagcloud">
-                    <a href="#" class="tag-link-201" title="1 topic"><i class="fa fa-tags"></i> Mobility</a>
-                    <a href="#" class="tag-link-197" title="1 topic"><i class="fa fa-tags"></i> Contact</a>
-                    <a href="#" class="tag-link-195" title="1 topic"><i class="fa fa-tags"></i> Career</a>
-                    <a href="#" class="tag-link-211" title="1 topic"><i class="fa fa-tags"></i> Business & Procurement</a>
-                    <a href="#" class="tag-link-204" title="1 topic"><i class="fa fa-tags"></i> Technology</a>
-                    <a href="#" class="tag-link-203" title="1 topic"><i class="fa fa-tags"></i> Why Us</a>
-                    <a href="#" class="tag-link-199" title="1 topic"><i class="fa fa-tags"></i> Our Story</a>
+                    <a href="mobility.php"  title="Mobility"><i class="fa fa-tags"></i> Mobility</a>
+                    <a href="contact.php" title="Contact"><i class="fa fa-tags"></i> Contact</a>
+                    <a href="whyus.php" title="Why Us"><i class="fa fa-tags"></i> Why Us</a>
+                    <a href="businessintelligence.php" title="Business Intelligent"><i class="fa fa-tags"></i> Business & Procurement</a>
+                    <a href="ourstory.php" title="Our Story"><i class="fa fa-tags"></i> Our Story</a>
                 </div>
             </div>
         </div>
@@ -68,9 +66,8 @@
     </div>
 </footer>
 
-<div class="scroll-top" data-spy="affix" data-offset-top="500">
+<!--<div class="scroll-top" data-spy="affix" data-offset-top="500">
     <a onclick="smoothScr.anim('roof')">
-        <i class="fa fa-angle-up fa-2x">
-        </i>
+        <i class="fa fa-angle-up fa-2x"></i>
     </a>      
-</div>
+</div>-->

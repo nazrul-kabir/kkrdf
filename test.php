@@ -76,6 +76,7 @@ if ($pid > 0 && $pid != '') {
                 </div>
             </div>
         </section>
+        <?php include './products.php'; ?> 
         <?php include './footer.php'; ?>     
         <?php include './footerscript.php'; ?>
     </body>

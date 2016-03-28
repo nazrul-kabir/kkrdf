@@ -47,7 +47,7 @@ if (isset($_POST['btnSave'])) {
                         Contact us
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>home">Home</a></li>
+                        <li><a href="<?php echo baseUrl(); ?>index.php">Home</a></li>
                         <li class="page">Contact us</li>
                     </ol>
                 </div>
@@ -112,22 +112,15 @@ if (isset($_POST['btnSave'])) {
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                     <p style="height: 30px;"></p>
                     <div class="col-md-12 hidden-xs hidden-sm">
                         <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7299.6740374666815!2d90.41979663678828!3d23.82439393644111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c65a3d9b9649%3A0xff4da0194c977480!2sNikunja+1%2C+Dhaka!5e0!3m2!1sen!2sbd!4v1437369262336" width="1150" height="350" frameborder="0" style="border:0" allowfullscreen></iframe></p>
                     </div>
-
                 </div>
             </div>
         </section>
-
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
-
-
     </body>
-
 </html>

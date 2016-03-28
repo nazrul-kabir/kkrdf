@@ -22,7 +22,7 @@ include './config/config.php';
                         Android
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo baseUrl(); ?>our-works">Our Works</a></li>
+                        <li><a href="">Our Works</a></li>
                         <li class="page">Android</li>
                     </ol>
                 </div>
@@ -49,18 +49,14 @@ include './config/config.php';
                                 <p>kLOCU$ is a cool and interactive app based on location finder that allows users to interact over great distance. 
                                     Find your friends in the crowd, have fun with them and  assured about their whereabouts and safety.
                                 </p>
-
                             </div>
-                            </div>
-                            
-                            
+                            </div>                            
                         </div>
                     </div>          
                     <?php include './leavemessage.php'; ?>
                 </div>
             </div>
         </section>
-        <?php include './products.php'; ?>
         <?php include './footer.php'; ?>
         <?php include './footerscript.php'; ?>
     </body>
