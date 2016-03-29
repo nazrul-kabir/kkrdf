@@ -4,11 +4,10 @@ include '../../config/config.php';
 $totalProduct = 0;
 $sqlProduct = "SELECT count(*) AS totalProduct FROM product";
 $resultProduct = mysqli_query($con, $sqlProduct);
-if($resultProduct){
+if ($resultProduct) {
     $objProduct = mysqli_fetch_object($resultProduct);
     $totalProduct = $objProduct->totalProduct;
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -34,24 +33,16 @@ if($resultProduct){
                 <section class="content">
                     <?php include basePath('admin/message.php'); ?>
                     <div class="row">
-                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                <div class="info-box">
-                                    <span class="info-box-icon bg-green"><i class="ion-ios-people-outline"></i></span>
-                                    <div class="info-box-content">
-                                        <span class="info-box-text">Total Products</span>
-                                        <span class="info-box-number"><?php echo $totalProduct; ?></span>
-                                    </div>
-                                </div>
-                            </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="info-box">
-                                <span class="info-box-icon bg-aqua"><i class="fa fa-cube"></i></span>
+                                <span class="info-box-icon bg-green"><i class="ion-ios-people-outline"></i></span>
                                 <div class="info-box-content">
-                                    <span class="info-box-text">Total News</span>
-                                    <span class="info-box-number">10</span>
+                                    <span class="info-box-text">Total Products</span>
+                                    <span class="info-box-number"><?php echo $totalProduct; ?></span>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </section>
 

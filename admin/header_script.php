@@ -1,6 +1,6 @@
-<meta charset="UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php echo $config['ADMIN_SITE_NAME']; ?></title>
-<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 <script src="<?php echo baseUrl('admin/assets/plugins/jQuery/jQuery-2.1.3.min.js') ?>"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo baseUrl('admin/assets/bootstrap/css/bootstrap.min.css'); ?>" />    
 <link rel="stylesheet" type="text/css" href="<?php echo baseUrl('admin/assets/kendo/css/kendo.common.min.css'); ?>" />
@@ -20,3 +20,4 @@
 <script>
     var baseUrl = '<?php echo baseUrl(); ?>';
 </script>
+<link rel="shortcut icon" href="<?php echo baseUrl(); ?>upload/favicon.ico">
