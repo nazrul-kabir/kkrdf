@@ -1,5 +1,6 @@
 <?php
 include './config/config.php';
+$pageID = 5;
 $contact_name = '';
 $contact_email = '';
 $contact_subject = '';
@@ -33,6 +34,8 @@ if (isset($_POST['btnSave'])) {
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>KKRDF | Contact</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <?php include './headerscript.php'; ?>
     </head>
     <body>

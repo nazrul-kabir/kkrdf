@@ -1,3 +1,7 @@
+<?php 
+$addClass = "active";
+
+?>
 <section id="header">
     <div class="logo-menu">
         <nav class="navbar navbar-default navbar-plain" role="navigation" data-spy="affix" data-offset-top="50">
@@ -10,16 +14,16 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav animated-nav navbar-right">
-                        <li class="active">
-                            <a href="<?php echo baseUrl(); ?>index.php">Home</a>
-                        </li>                                    
-                        <li class="dropdown dropdown-toggle">
-                            <a href="<?php echo baseUrl(); ?>ourstory.php">Our Story</a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown"><a href="<?php echo baseUrl(); ?>whyus.php">Why Us</a></li>
-                            </ul>
-                        </li>             
-                        <li class="dropdown dropdown-toggle">
+                        <li class="<?php if($pageID == 1){ echo $addClass;} ?>">
+                                <a href="<?php echo baseUrl(); ?>index.php">Home</a>
+                            </li>  
+                            <li class="dropdown dropdown-toggle <?php if($pageID == 2){ echo $addClass;} ?>">
+                                <a href="<?php echo baseUrl(); ?>ourstory.php">Our Story</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown"><a href="<?php echo baseUrl(); ?>whyus.php">Why Us</a></li>
+                                </ul>
+                            </li>  
+                        <li class="dropdown dropdown-toggle <?php if($pageID == 3){ echo $addClass;} ?>">
                             <a href="<?php echo baseUrl(); ?>consulting.php">Consulting</a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo baseUrl(); ?>mobility.php">Mobility</a></li>
@@ -30,10 +34,7 @@
                                 <li><a href="<?php echo baseUrl(); ?>cloud.php">Cloud</a></li>
                             </ul>                   
                         </li>
-<!--                        <li class="dropdown dropdown-toggle">
-                            <a href="<?php // echo baseUrl(); ?>technology.php">Technology</a>
-                        </li>-->
-                        <li class="dropdown dropdown-toggle">
+                        <li class="dropdown dropdown-toggle  <?php if($pageID == 4){ echo $addClass;} ?>">
                             <a href="<?php echo baseUrl(); ?>ourworks.php" data-toggle="dropdown">Our Works</a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo baseUrl(); ?>enterprisedevelopment.php">Enterprise Development</a></li>
@@ -51,7 +52,7 @@
                             </ul>
                         </li>
 
-                        <li class="dropdown dropdown-toggle">
+                        <li class="dropdown dropdown-toggle  <?php if($pageID == 5){ echo $addClass;} ?>">
                             <a href="<?php echo baseUrl(); ?>contact.php">Contact Us</a>
                         </li>
                         <li class="search">
@@ -89,7 +90,7 @@
                         <li><a href="<?php echo baseUrl(); ?>cloud.php">Cloud</a></li>
                     </ul>
                 </li>
-                <!--<li><a href="<?php // echo baseUrl(); ?>technology.php">Technology</a></li>-->  
+                <!--<li><a href="<?php // echo baseUrl();     ?>technology.php">Technology</a></li>-->  
                 <li>
                     <a href="<?php echo baseUrl(); ?>ourworks.php" data-toggle="dropdown">Our Works</a>
                     <ul>

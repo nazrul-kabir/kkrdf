@@ -1,6 +1,3 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KKRDF</title>
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
@@ -31,3 +28,4 @@
 
 <link href="assets/product/jquery.flexisel.css" rel="stylesheet" type="text/css">
 <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="<?php echo baseUrl(); ?>upload/favicon.ico">

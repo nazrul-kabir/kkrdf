@@ -1,9 +1,13 @@
 <?php
 include './config/config.php';
+$pageID = 1;
 ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <title>K&K Research & Development Foundation -> KKRDF</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <?php include './headerscript.php'; ?> 
     </head>
     <body>
@@ -53,8 +57,10 @@ include './config/config.php';
                 </div>
             </div>
         </section>
+        <?php include './sister_concern.php'; ?>
+        <div style="height: 50px;"></div>
         <?php include './whychooseus.php'; ?>
-        
+
 
         <?php include './products.php'; ?>     
         <?php include './footer.php'; ?>

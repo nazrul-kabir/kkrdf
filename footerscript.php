@@ -43,6 +43,30 @@
     });
 </script>
 <script type="text/javascript">
+    // Sister Concern
+    $("#sisterconcern").flexisel({
+        visibleItems: 4,
+        animationSpeed: 2000,
+        autoPlay: true,
+        autoPlaySpeed: 3000,
+        pauseOnHover: true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: {
+            portrait: {
+                changePoint: 480,
+                visibleItems: 1
+            },
+            landscape: {
+                changePoint: 640,
+                visibleItems: 2
+            },
+            tablet: {
+                changePoint: 768,
+                visibleItems: 3
+            }
+        }
+    });
+    // Product slider
     $("#photodiv").flexisel({
         visibleItems: 6,
         animationSpeed: 1000,
@@ -65,4 +89,5 @@
             }
         }
     });
+
 </script>

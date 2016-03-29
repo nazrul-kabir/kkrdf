@@ -25,6 +25,9 @@ if ($pid > 0 && $pid != '') {
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>KKRDF | <?php echo $product_title; ?></title>
+        <meta charset="utf-8">
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <?php include './headerscript.php'; ?>
     </head>
     <body>
@@ -66,7 +69,8 @@ if ($pid > 0 && $pid != '') {
                                 </div>
                                 <div class="post-content">
                                     <p style="text-align: justify;">
-                                        <?php echo html_entity_decode($product_details); ?>
+                                        <?php echo html_entity_decode(html_entity_decode($product_details, ENT_QUOTES | ENT_IGNORE, "UTF-8")); ?>
+                                        <?php // echo html_entity_decode($product_details); ?>
                                     </p>
                                 </div>
                             </div>
