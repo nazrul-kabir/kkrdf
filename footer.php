@@ -29,7 +29,7 @@
                         <p>K&K Research & Development Foundation</p>
                     </li>
                     <li class="tweet">
-                        <p>House: 27, Road: 3, Nikunja 1, Dhaka 1229</p>
+                        <p>House: 7, Road: 3B, Nikunja 1, Dhaka 1229</p>
                     </li>
                     <li class="tweet">
                         <p>Phone: 02 8900082, 02 8900159, 02 8900537, 02 8900538, 02 8900539</p>
@@ -64,10 +64,5 @@
             </div>
         </div>
     </div>
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></a>
 </footer>
-
-<!--<div class="scroll-top" data-spy="affix" data-offset-top="500">
-    <a onclick="smoothScr.anim('roof')">
-        <i class="fa fa-angle-up fa-2x"></i>
-    </a>      
-</div>-->

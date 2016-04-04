@@ -28,4 +28,5 @@
 
 <link href="assets/product/jquery.flexisel.css" rel="stylesheet" type="text/css">
 <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="assets/css/top.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" href="<?php echo baseUrl(); ?>upload/favicon.ico">
